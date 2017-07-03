@@ -54,8 +54,6 @@ typedef struct {
   uint32_t startColumn;
   uint32_t length;
   char *str;
-  char *name;               // Do not need this (TODO: remove)
-  Token *child;             // For temporary usage (TODO: remove)
 } IdentifierToken, StringToken, CharConstToken;
 
 typedef struct {

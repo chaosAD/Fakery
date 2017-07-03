@@ -7,13 +7,13 @@ void tokenDump(Token *token);
 
 // Unit Under Test (UUT)
 Token *parse(Tokenizer *tokenizer) {
-  tokenDump(getToken(tokenizer));
-  tokenDump(getToken(tokenizer));
-  tokenDump(getToken(tokenizer));
-  tokenDump(getToken(tokenizer));
-  tokenDump(getToken(tokenizer));
-  tokenDump(getToken(tokenizer));
-  tokenDump(getToken(tokenizer));
+  Token *token;
+
+  while((token = getToken(tokenizer)) != NULL) {
+    tokenDump(token);
+  }
+  tokenDump(token);
+
 //  tokenDump(peepToken(tokenizer));
 //  tokenDump(advanceToken(tokenizer));
 }
